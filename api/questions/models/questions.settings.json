@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Questions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "postdate": {
+      "type": "datetime"
+    },
+    "posted_by": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}
